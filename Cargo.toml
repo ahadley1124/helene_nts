@@ -1,0 +1,9 @@
+[package]
+name = "helene_nts"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures = "0.3.30"
+rocket = "0.5.1"
+sqlx = { version = "0.8.2", features = ["mysql", "runtime-async-std"] }

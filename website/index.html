@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://127.0.0.1:8000/index.js" defer></script>
+    <title>Hurricane Helene Contact Form</title>
+  </head>
+  <body>
+    <h1>Hurricane Helene Contact Form</h1>
+    <h4>
+      My name is Austin Hadley. I am a licensed ham radio operator and
+      participate in the
+      <a href="https://www.arrl.org/nts">National Traffic System</a>. This is a
+      volunteer group of radio operators who pass messages between areas in
+      times of need. Whether you have contact with them or not, I am here to
+      help you get a message to your loved ones. I can help coordinate supplies
+      to areas and pass messages back to you from your loved ones. Please fill
+      out the form below and I will do my best to help you.
+    </h4>
+    <form action="http://127.0.0.1:8000" method="POST">
+      <label for="submitter_name">Your Name:</label>
+      <input
+        type="text"
+        id="submitter_name"
+        name="submitter_name"
+        required
+      /><br />
+      <label for="submitter_email">Your Email:</label>
+      <input
+        type="email"
+        id="submitter_email"
+        name="submitter_email"
+        required
+      /><br />
+      <label for="submitter_phone">Your Phone:</label>
+      <input
+        type="tel"
+        id="submitter_phone"
+        name="submitter_phone"
+        required
+      /><br />
+      <label for="lo_name">Loved Ones Name:</label>
+      <input type="text" id="lo_name" name="lo_name" required /><br />
+      <label for="lo_email">Loved Ones Email:</label>
+      <input type="email" id="lo_email" name="lo_email" required /><br />
+      <label for="lo_phone">Loved Ones Phone:</label>
+      <input type="tel" id="lo_phone" name="lo_phone" required /><br />
+      <label for="lo_address">Loved Ones Address:</label>
+      <input type="text" id="lo_address" name="lo_address" required /><br />
+      <label for="message">Message:</label>
+      <!-- Set the max to be 25 words and not characters -->
+      <input type="text" id="message" name="message" required /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
